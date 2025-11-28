@@ -1,38 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\PopupPerformanceSample\\",
+  "WorkspaceRootPath": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformancesample\\popupperformancesample\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformance\\how-to-do-performance-tuning-in-sfpopup\\popupperformancesample\\popupperformancesample\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformancesample\\popupperformancesample\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformance\\how-to-do-performance-tuning-in-sfpopup\\popupperformancesample\\popupperformancesample\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformancesample\\popupperformancesample\\views\\productsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\views\\productsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformance\\how-to-do-performance-tuning-in-sfpopup\\popupperformancesample\\popupperformancesample\\views\\productsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\views\\productsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformancesample\\popupperformancesample\\views\\productsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\views\\productsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformance\\how-to-do-performance-tuning-in-sfpopup\\popupperformancesample\\popupperformancesample\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformancesample\\popupperformancesample\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformance\\how-to-do-performance-tuning-in-sfpopup\\popupperformancesample\\popupperformancesample\\views\\productsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\views\\productsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformancesample\\popupperformancesample\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformance\\how-to-do-performance-tuning-in-sfpopup\\popupperformancesample\\popupperformancesample\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformancesample\\popupperformancesample\\popupperformancesample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\popupperformancesample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformance\\how-to-do-performance-tuning-in-sfpopup\\popupperformancesample\\popupperformancesample\\popupperformancesample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\popupperformancesample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformancesample\\popupperformancesample\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCAFAF92-DEA7-4D20-8221-BA776C188894}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|d:\\popupperformance\\how-to-do-performance-tuning-in-sfpopup\\popupperformancesample\\popupperformancesample\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E6F8D7E-996F-7AAC-94DB-2DDAE6D8FDFC}|PopupPerformanceSample\\PopupPerformanceSample.csproj|solutionrelative:popupperformancesample\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,76 +50,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ProductsView.xaml",
-              "DocumentMoniker": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\ProductsView.xaml",
+              "DocumentMoniker": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\ProductsView.xaml",
               "RelativeDocumentMoniker": "PopupPerformanceSample\\Views\\ProductsView.xaml",
-              "ToolTip": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\ProductsView.xaml",
+              "ToolTip": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\ProductsView.xaml",
               "RelativeToolTip": "PopupPerformanceSample\\Views\\ProductsView.xaml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-25T17:48:20.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T17:48:20.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "PopupPerformanceSample\\Views\\MainPage.xaml.cs",
+              "ToolTip": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\MainPage.xaml.cs",
+              "RelativeToolTip": "PopupPerformanceSample\\Views\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:48:12.069Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "PopupPerformanceSample\\Views\\MainPage.xaml.cs",
-              "ToolTip": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\MainPage.xaml.cs",
-              "RelativeToolTip": "PopupPerformanceSample\\Views\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T17:48:12.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ProductsView.xaml.cs",
-              "DocumentMoniker": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\ProductsView.xaml.cs",
+              "DocumentMoniker": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\ProductsView.xaml.cs",
               "RelativeDocumentMoniker": "PopupPerformanceSample\\Views\\ProductsView.xaml.cs",
-              "ToolTip": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\ProductsView.xaml.cs",
+              "ToolTip": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\ProductsView.xaml.cs",
               "RelativeToolTip": "PopupPerformanceSample\\Views\\ProductsView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T17:48:48.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T17:48:48.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\App.xaml.cs",
+              "RelativeDocumentMoniker": "PopupPerformanceSample\\App.xaml.cs",
+              "ToolTip": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\App.xaml.cs",
+              "RelativeToolTip": "PopupPerformanceSample\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:49:35.252Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\App.xaml.cs",
-              "RelativeDocumentMoniker": "PopupPerformanceSample\\App.xaml.cs",
-              "ToolTip": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\App.xaml.cs",
-              "RelativeToolTip": "PopupPerformanceSample\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T17:49:35.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "MauiProgram.cs",
-              "DocumentMoniker": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\MauiProgram.cs",
+              "DocumentMoniker": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\MauiProgram.cs",
               "RelativeDocumentMoniker": "PopupPerformanceSample\\MauiProgram.cs",
-              "ToolTip": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\MauiProgram.cs",
+              "ToolTip": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\MauiProgram.cs",
               "RelativeToolTip": "PopupPerformanceSample\\MauiProgram.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T17:51:43.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\MainPage.xaml",
+              "DocumentMoniker": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\MainPage.xaml",
               "RelativeDocumentMoniker": "PopupPerformanceSample\\Views\\MainPage.xaml",
-              "ToolTip": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\MainPage.xaml",
+              "ToolTip": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\Views\\MainPage.xaml",
               "RelativeToolTip": "PopupPerformanceSample\\Views\\MainPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -129,28 +125,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PopupPerformanceSample",
-              "DocumentMoniker": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\PopupPerformanceSample.csproj",
+              "Title": "PopupPerformanceSample.csproj",
+              "DocumentMoniker": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\PopupPerformanceSample.csproj",
               "RelativeDocumentMoniker": "PopupPerformanceSample\\PopupPerformanceSample.csproj",
-              "ToolTip": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\PopupPerformanceSample.csproj",
+              "ToolTip": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\PopupPerformanceSample.csproj",
               "RelativeToolTip": "PopupPerformanceSample\\PopupPerformanceSample.csproj",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAD8AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-25T17:44:14.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T17:44:14.505Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Product.cs",
-              "DocumentMoniker": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\Models\\Product.cs",
+              "DocumentMoniker": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\Models\\Product.cs",
               "RelativeDocumentMoniker": "PopupPerformanceSample\\Models\\Product.cs",
-              "ToolTip": "D:\\PopupPerformanceSample\\PopupPerformanceSample\\Models\\Product.cs",
+              "ToolTip": "D:\\PopupPerformance\\How-to-do-performance-tuning-in-SfPopup\\PopupPerformanceSample\\PopupPerformanceSample\\Models\\Product.cs",
               "RelativeToolTip": "PopupPerformanceSample\\Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T17:49:20.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T17:49:20.825Z"
             }
           ]
         }
