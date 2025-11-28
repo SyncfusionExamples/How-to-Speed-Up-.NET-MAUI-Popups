@@ -5,12 +5,14 @@ This demo shows how to do performance tuning in .NET MAUI Popup.
 Imagine this: your .NET MAUI app looks and feels polished until a popup with heavy content opens and the interface stutters. Animations hitch, scrolling slows down, and the snappy experience you designed suddenly feels fragile. 
  Syncfusion® .NET MAUI Popup is a powerful UI element; however, popups can introduce performance challenges when dealing with heavy content or complex layouts. 
 
-In this blog, we will show you how to supercharge your app performance when used Syncfusion® .NET MAUI Popup using proven techniques below.
-•	On-demand content (lazy initialization)
-•	Content caching (reuse across opens)
-•	Virtualization for large lists
-•	Fluid, Jank‑free animations
-•	Content template strategy (proper lifecycle)
+
+In this blog, we will show you how to supercharge your app performance when using Syncfusion® .NET MAUI Popup with the following proven techniques:
+- **On-demand content (lazy initialization)**
+- **Content caching (reuse across opens)**
+- **Virtualization for large lists**
+- **Fluid, jank-free animations**
+- **ContentTemplate strategy (proper lifecycle)**
+
 
 By applying these strategies, you will achieve faster load times, reduced memory usage, and seamless UI experience across Android, iOS, Windows, and macOS.
 
