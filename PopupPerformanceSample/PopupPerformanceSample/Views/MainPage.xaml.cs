@@ -3,16 +3,28 @@ using PopupPerformanceSample.Views;
 
 namespace PopupPerformanceSample
 {
+    /// <summary>
+    /// The main page that lists products and shows a popup with details when an item is tapped.
+    /// </summary>
     public partial class MainPage : ContentPage
     {
+        /// <summary>
+        /// Cached instance of the product details view to avoid recreating it for every selection.
+        /// </summary>
         private ProductDetailsPopupView? _cachedPopupView;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainPage"/> class.
+        /// </summary>
         public MainPage()
         {
             InitializeComponent();
             LoadProducts();
         }
 
+        /// <summary>
+        /// Populates the product list with sample data.
+        /// </summary>
         private void LoadProducts()
         {
             var products = new List<Product>
@@ -33,6 +45,11 @@ namespace PopupPerformanceSample
             ProductList.ItemsSource = products;
         }
 
+        /// <summary>
+        /// Handles the Add to Cart event from the popup view, closes the popup and shows a confirmation.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="product">The product added to the cart.</param>
         private async void OnAddToCartRequested(object? sender, Product product)
         {
             ProductPopup.IsOpen = false;
@@ -40,6 +57,11 @@ namespace PopupPerformanceSample
             await DisplayAlertAsync("Cart", $"{product.Name} added to cart!", "OK");
         }
 
+        /// <summary>
+        /// Handles product selection from the list and displays the popup with details.
+        /// </summary>
+        /// <param name="sender">The list view raising the event.</param>
+        /// <param name="e">Tap event data containing the selected item.</param>
         private async void OnProductSelected(object sender, Syncfusion.Maui.ListView.ItemTappedEventArgs e)
         {
             if (e.DataItem == null) return;
