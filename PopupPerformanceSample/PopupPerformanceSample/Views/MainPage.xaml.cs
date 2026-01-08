@@ -19,6 +19,11 @@ namespace PopupPerformanceSample
         public MainPage()
         {
             InitializeComponent();
+            // Create and cache the popup content once; set ContentTemplate once to avoid template churn
+            _cachedPopupView = new ProductDetailsPopupView();
+            _cachedPopupView.AddToCartRequested += OnAddToCartRequested;
+            ProductPopup.ContentTemplate = new DataTemplate(() => _cachedPopupView);
+
             LoadProducts();
         }
 
@@ -64,28 +69,26 @@ namespace PopupPerformanceSample
         /// <param name="e">Tap event data containing the selected item.</param>
         private async void OnProductSelected(object sender, Syncfusion.Maui.ListView.ItemTappedEventArgs e)
         {
-            if (e.DataItem == null) return;
-
-            var selectedProduct = e.DataItem as Product;
-
-            if (_cachedPopupView == null)
+            if (e.DataItem is not Product selectedProduct)
             {
-                _cachedPopupView = new ProductDetailsPopupView();
-                _cachedPopupView.AddToCartRequested += OnAddToCartRequested;
+                return;
             }
 
-            if (selectedProduct != null)
-            {
-                await _cachedPopupView.InitializeAsync(selectedProduct);
-            }
+            // Initialize on-demand for the selected product; view is cached and assigned once
+            await _cachedPopupView!.InitializeAsync(selectedProduct);
 
-            ProductPopup.ContentTemplate = new DataTemplate(() => _cachedPopupView);
-
-            await this.FadeToAsync(0.8, 150);
+            // Rely on SfPopup's own overlay/animations; avoid page-level fades
             ProductPopup.Show();
-            await this.FadeToAsync(1, 150);
 
             ProductList.SelectedItem = null;
+        }
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            if (_cachedPopupView != null)
+            {
+                _cachedPopupView.AddToCartRequested -= OnAddToCartRequested;
+            }
         }
     }
 }

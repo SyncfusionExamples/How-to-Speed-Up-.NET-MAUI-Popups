@@ -16,7 +16,8 @@
                                 SelectionMode="Single"
                                 ItemTapped="OnProductSelected"
                                 ItemSize="72"
-                                AutoFitMode="Height">
+                                AutoFitMode="Height"
+                                AutomationId="ProductList">
             <SfListView:SfListView.ItemTemplate>
                 <DataTemplate>
                     <Border Stroke="#cccccc"
@@ -47,6 +48,7 @@
                             HeightRequest="450"
                             ShowCloseButton="True"
                             AnimationMode="Fade"
+                            AutomationId="ProductPopup"
                             HorizontalOptions="Center"
                             VerticalOptions="Center" />
     </Grid>

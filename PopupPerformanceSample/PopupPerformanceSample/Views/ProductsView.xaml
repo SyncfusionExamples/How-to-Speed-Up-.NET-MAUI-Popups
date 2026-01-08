@@ -8,15 +8,19 @@
         <Label x:Name="ProductName"
                FontSize="20"
                FontAttributes="Bold"
-               Grid.Row="0" />
+               Grid.Row="0"
+               Text="{Binding Name}" />
         <Label x:Name="ProductPrice"
                FontSize="18"
                TextColor="Green"
-               Grid.Row="1" />
-        <CollectionView x:Name="VariantsList"
-                               Grid.Row="2"
-                               SelectionMode="Single"
-                              SelectionChanged="VariantsList_SelectionChanged">
+               Grid.Row="1"/>
+            <CollectionView x:Name="VariantsList"
+                                    Grid.Row="2"
+                                    SelectionMode="Single"
+                                    ItemsLayout="VerticalList"
+                                    ItemSizingStrategy="MeasureFirstItem"
+                                    BackgroundColor="Transparent"
+                                    SelectionChanged="VariantsList_SelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Border Stroke="#cccccc"

@@ -41,8 +41,10 @@ namespace PopupPerformanceSample.Views
             // Simulate asynchronous work such as fetching variant data.
             await Task.Delay(200);
 
-            ProductName.Text = product.Name;
+            // Bind once per product; XAML binds Name; set initial price here
+            BindingContext = product;
             ProductPrice.Text = $"Price: {product.Price:C}";
+            VariantsList.SelectedItem = null;
 
             var baseName = string.IsNullOrWhiteSpace(product.Name) ? "Product" : product.Name;
             var variants = Enumerable.Range(1, 100)
@@ -67,15 +69,22 @@ namespace PopupPerformanceSample.Views
         /// </summary>
         private void VariantsList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (_currentProduct == null || e.CurrentSelection.FirstOrDefault() is not string variant)
+            if (_currentProduct == null)
+                return;
+
+            string? variant = null;
+            if (e.CurrentSelection != null && e.CurrentSelection.Count > 0)
+            {
+                variant = e.CurrentSelection[0] as string;
+            }
+            if (string.IsNullOrEmpty(variant))
                 return;
 
             var index = 1;
-            if (VariantsList.ItemsSource is IEnumerable<string> items)
+            if (VariantsList.ItemsSource is IList<string> items)
             {
-                var list = items.ToList();
-                index = list.IndexOf(variant) + 1;
-                if (index <= 0) index = 1;
+                var idx = items.IndexOf(variant);
+                index = idx >= 0 ? idx + 1 : 1;
             }
 
             var basePrice = _currentProduct.Price ?? 0m;
