@@ -9,22 +9,32 @@ public class Product
     /// Gets or sets the product name.
     /// </summary>
     public string? Name { get; set; }
+
     /// <summary>
     /// Gets or sets the product description.
     /// </summary>
     public string? Description { get; set; }
+
+    /// <summary>
+    /// Image of the product.
+    /// </summary>
+    public string? Image { get; set; }
+
     /// <summary>
     /// Gets or sets the base price of the product.
     /// </summary>
     public decimal? Price { get; set; }
+
     /// <summary>
     /// Gets or sets the URL of the product image.
     /// </summary>
     public string? ImageUrl { get; set; }
+
     /// <summary>
     /// Gets or sets the minimum price used for displaying the price range.
     /// </summary>
     public decimal? MinPrice { get; set; }
+
     /// <summary>
     /// Gets or sets the maximum price used for displaying the price range.
     /// </summary>

@@ -1,58 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sflistview="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+             xmlns:SfListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+             xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons"
              x:Class="PopupPerformanceSample.Views.ProductDetailsPopupView"
              Padding="10,0,10,10">
-    <Grid RowDefinitions="Auto,Auto,*,Auto"
-          RowSpacing="10">
-        <Label x:Name="ProductName"
-               FontSize="20"
-               FontAttributes="Bold"
-               Grid.Row="0"
-               Text="{Binding Name}" />
+    <Grid RowDefinitions="Auto,*,Auto" RowSpacing="10">
         <Label x:Name="ProductPrice"
                FontSize="18"
                TextColor="Green"
-               Grid.Row="1"/>
-            <CollectionView x:Name="VariantsList"
-                                    Grid.Row="2"
-                                    SelectionMode="Single"
-                                    ItemsLayout="VerticalList"
-                                    ItemSizingStrategy="MeasureFirstItem"
-                                    BackgroundColor="Transparent"
-                                    SelectionChanged="VariantsList_SelectionChanged">
-            <CollectionView.ItemTemplate>
+               Grid.Row="0"/>
+
+        <SfListView:SfListView x:Name="VariantsList"
+                               Grid.Row="1"
+                               ItemsSource="{Binding Variants}"
+                               SelectedItem="{Binding SelectedVariant, Mode=TwoWay}"
+                               SelectionMode="Single"
+                               AutoFitMode="Height"
+                               ItemSize="72"
+                               SelectionBackground="LightBlue">
+            <SfListView:SfListView.ItemTemplate>
                 <DataTemplate>
-                    <Border Stroke="#cccccc"
-                            StrokeThickness="1"
-                            Padding="10"
-                            Margin="5"
-                            BackgroundColor="#f0f0f0"
-                            StrokeShape="RoundRectangle 8">
-                        <Label Text="{Binding}"
-                               Padding="5"
-                               FontSize="16" />
-                        <VisualStateManager.VisualStateGroups>
-                            <VisualStateGroup Name="CommonStates">
-                                <VisualState Name="Normal"></VisualState>
-                                <VisualState Name="Selected">
-                                    <VisualState.Setters>
-                                        <Setter Property="BackgroundColor"
-                                                Value="LightBlue"></Setter>
-                                    </VisualState.Setters>
-                                </VisualState>
-                            </VisualStateGroup>
-                        </VisualStateManager.VisualStateGroups>
-                    </Border>
+                    <Grid ColumnDefinitions="60,*,Auto"
+                          RowDefinitions="Auto,0.5"
+                          RowSpacing="3"
+                          HeightRequest="70"
+                          ColumnSpacing="10"
+                          Padding="10">
+                        <Image Grid.Row="0" Grid.Column="0"
+                               Source="{Binding Image}"
+                               WidthRequest="56"
+                               HeightRequest="56"
+                               Aspect="AspectFit"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center" />
+                        <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="2" VerticalOptions="Center">
+                            <Label Text="{Binding Title}" FontAttributes="Bold" />
+                            <Label Text="{Binding Specs}" FontSize="12" TextColor="#6B7280" />
+                        </VerticalStackLayout>
+                        <Label Grid.Row="0" Grid.Column="2"
+                               Text="{Binding Price, StringFormat='{}{0:C}'}"
+                               TextColor="#2E7D32"
+                               VerticalOptions="Center"
+                               HorizontalOptions="End"
+                               HorizontalTextAlignment="End" />
+                        <BoxView Grid.Row="1" Grid.ColumnSpan="3"
+                                 HeightRequest="0.5"
+                                 Color="Gray" />
+                    </Grid>
                 </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-        <Button Text="Add to Cart"
-                BackgroundColor="#0078D7"
-                TextColor="White"
-                Clicked="OnAddToCartClicked"
-                Grid.Row="3"
-                HeightRequest="40"
-                CornerRadius="8" />
+            </SfListView:SfListView.ItemTemplate>
+        </SfListView:SfListView>
+
+        <buttons:SfButton x:Name="AddToCartButton"
+                          Grid.Row="2"
+                          HeightRequest="44"
+                          CornerRadius="10"
+                          Text="Add to Cart"
+                          TextColor="White"
+                          Clicked="OnAddToCartClicked">
+            <buttons:SfButton.Triggers>
+                <DataTrigger TargetType="buttons:SfButton"
+                             Binding="{Binding SelectedVariant}"
+                             Value="{x:Null}">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </buttons:SfButton.Triggers>
+
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="Background" Value="#0078D7" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Property="Background" Value="#0A66C2" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Hovered">
+                        <VisualState.Setters>
+                            <Setter Property="Background" Value="#1E88E5" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Disabled">
+                        <VisualState.Setters>
+                            <Setter Property="Background" Value="#9CA3AF" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </buttons:SfButton>
     </Grid>
 </ContentView>
