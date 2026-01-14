@@ -3,31 +3,38 @@ namespace PopupPerformanceSample.Views;
 
 public partial class MainPage : ContentPage
 {
+    private readonly MainViewModel _vm;
     private ProductDetailsPopupView? _popupView;
 
     public MainPage()
     {
         InitializeComponent();
-        var vm = new MainViewModel();
-        BindingContext = vm;
 
-        // Create and cache popup content once; assign to ContentTemplate
-        _popupView = new ProductDetailsPopupView();
-        _popupView.BindingContext = vm; // bind to same VM
-        ProductPopup.ContentTemplate = new DataTemplate(() => _popupView);
+        // Create a single VM instance and set as BindingContext
+        _vm = new MainViewModel();
+        BindingContext = _vm;
 
-        vm.RequestOpenPopup += async (s, product) =>
+        // Lazy create once and cache; also reset viewport before each open
+        _vm.RequestOpenPopup += async (s, product) =>
         {
-            // ProductDetailsPopupView listens to VM and updates UI
+            if (_popupView == null)
+            {
+                _popupView = new ProductDetailsPopupView
+                {
+                    BindingContext = _vm
+                };
+                ProductPopup.ContentTemplate = new DataTemplate(() => _popupView);
+            }
+
             ProductPopup.Show();
             ProductList.SelectedItem = null;
             await Task.CompletedTask;
         };
 
-        vm.RequestClosePopup += async (s, product) =>
+        _vm.RequestClosePopup += async (s, product) =>
         {
             ProductPopup.IsOpen = false;
-            await DisplayAlert("Cart", $"{product.Name} added to cart!", "OK");
+            await DisplayAlertAsync("Cart", $"{product.Name} added to cart!", "OK");
         };
     }
 

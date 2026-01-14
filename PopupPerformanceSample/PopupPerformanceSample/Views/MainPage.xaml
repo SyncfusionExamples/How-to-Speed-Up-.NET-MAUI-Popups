@@ -6,10 +6,6 @@
              xmlns:local="clr-namespace:PopupPerformanceSample"
              x:Class="PopupPerformanceSample.Views.MainPage">
 
-    <ContentPage.BindingContext>
-        <local:MainViewModel />
-    </ContentPage.BindingContext>
-
     <Grid Padding="20" RowDefinitions="40,*" RowSpacing="12">
         <Label Text="Product List"
                FontSize="24"
@@ -74,6 +70,8 @@
                             AnimationMode="Fade"
                             AutomationId="ProductPopup"
                             HorizontalOptions="Center"
+                            AnimationDuration="180"
+                            AnimationEasing="SinOut"
                             VerticalOptions="Center" >
             <syncfusion:SfPopup.HeaderTemplate>
                 <DataTemplate>

@@ -11,15 +11,13 @@
                TextColor="Green"
                Grid.Row="0"/>
 
-        <SfListView:SfListView x:Name="VariantsList"
+        <CollectionView x:Name="VariantsList"
                                Grid.Row="1"
                                ItemsSource="{Binding Variants}"
                                SelectedItem="{Binding SelectedVariant, Mode=TwoWay}"
                                SelectionMode="Single"
-                               AutoFitMode="Height"
-                               ItemSize="72"
-                               SelectionBackground="LightBlue">
-            <SfListView:SfListView.ItemTemplate>
+                              >
+            <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid ColumnDefinitions="60,*,Auto"
                           RowDefinitions="Auto,0.5"
@@ -47,10 +45,21 @@
                         <BoxView Grid.Row="1" Grid.ColumnSpan="3"
                                  HeightRequest="0.5"
                                  Color="Gray" />
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup Name="CommonStates">
+                                <VisualState Name="Normal"></VisualState>
+                                <VisualState Name="Selected">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor"
+                                                Value="LightBlue"></Setter>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
                     </Grid>
                 </DataTemplate>
-            </SfListView:SfListView.ItemTemplate>
-        </SfListView:SfListView>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
 
         <buttons:SfButton x:Name="AddToCartButton"
                           Grid.Row="2"
