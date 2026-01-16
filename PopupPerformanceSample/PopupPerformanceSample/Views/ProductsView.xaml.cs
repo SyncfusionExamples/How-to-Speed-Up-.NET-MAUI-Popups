@@ -1,4 +1,4 @@
-namespace PopupPerformanceSample.Views;
+namespace PopupPerformanceSample;
 
 public partial class ProductDetailsPopupView : ContentView
 {
@@ -17,6 +17,18 @@ public partial class ProductDetailsPopupView : ContentView
                 };
             }
         };
+    }
+
+    public void PrepareForOpenSfListView()
+    {
+        if (BindingContext is not MainViewModel vm || VariantsList == null)
+            return;
+
+        VariantsList.SelectedItem = null;
+
+        var source = vm.Variants;
+        VariantsList.ItemsSource = null;
+        VariantsList.ItemsSource = source;
     }
 
     private void OnAddToCartClicked(object sender, EventArgs e)

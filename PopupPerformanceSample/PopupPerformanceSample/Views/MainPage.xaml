@@ -4,7 +4,7 @@
              xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
              xmlns:SfListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
              xmlns:local="clr-namespace:PopupPerformanceSample"
-             x:Class="PopupPerformanceSample.Views.MainPage">
+             x:Class="PopupPerformanceSample.MainPage">
 
     <Grid Padding="20" RowDefinitions="40,*" RowSpacing="12">
         <Label Text="Product List"
@@ -70,7 +70,7 @@
                             AnimationMode="Fade"
                             AutomationId="ProductPopup"
                             HorizontalOptions="Center"
-                            AnimationDuration="180"
+                            AnimationDuration="300"
                             AnimationEasing="SinOut"
                             VerticalOptions="Center" >
             <syncfusion:SfPopup.HeaderTemplate>

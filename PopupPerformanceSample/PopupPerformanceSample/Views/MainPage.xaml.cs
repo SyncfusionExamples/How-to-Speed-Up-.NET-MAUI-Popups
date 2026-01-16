@@ -1,9 +1,9 @@
 
-namespace PopupPerformanceSample.Views;
+namespace PopupPerformanceSample;
 
 public partial class MainPage : ContentPage
 {
-    private readonly MainViewModel _vm;
+    private readonly MainViewModel _viewModel;
     private ProductDetailsPopupView? _popupView;
 
     public MainPage()
@@ -11,27 +11,34 @@ public partial class MainPage : ContentPage
         InitializeComponent();
 
         // Create a single VM instance and set as BindingContext
-        _vm = new MainViewModel();
-        BindingContext = _vm;
+        _viewModel = new MainViewModel();
+        BindingContext = _viewModel;
 
         // Lazy create once and cache; also reset viewport before each open
-        _vm.RequestOpenPopup += async (s, product) =>
+        _viewModel.RequestOpenPopup += async (s, product) =>
         {
+
+            ProductPopup.Opened += (_, __) =>
+            {
+                Dispatcher.Dispatch(() => _popupView.PrepareForOpenSfListView());
+            };
+
             if (_popupView == null)
             {
                 _popupView = new ProductDetailsPopupView
                 {
-                    BindingContext = _vm
+                    BindingContext = _viewModel
                 };
                 ProductPopup.ContentTemplate = new DataTemplate(() => _popupView);
             }
+
 
             ProductPopup.Show();
             ProductList.SelectedItem = null;
             await Task.CompletedTask;
         };
 
-        _vm.RequestClosePopup += async (s, product) =>
+        _viewModel.RequestClosePopup += async (s, product) =>
         {
             ProductPopup.IsOpen = false;
             await DisplayAlertAsync("Cart", $"{product.Name} added to cart!", "OK");
