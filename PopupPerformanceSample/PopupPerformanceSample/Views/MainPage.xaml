@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:SfListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+             xmlns:local="clr-namespace:PopupPerformanceSample"
+             x:Class="PopupPerformanceSample.MainPage">
+
+    <Grid Padding="20" RowDefinitions="40,*" RowSpacing="12">
+        <Label Text="Product List"
+               FontSize="24"
+               HorizontalOptions="Center"
+               Margin="0,0,0,8"
+               Grid.Row="0" />
+
+        <SfListView:SfListView x:Name="ProductList"
+                                Grid.Row="1"
+                                ItemsSource="{Binding Products}"
+                                SelectionMode="Single"
+                                ItemTapped="OnProductSelected"
+                                ItemSize="72"
+                                AutoFitMode="Height"
+                                AutomationId="ProductList">
+            <SfListView:SfListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="60,*,Auto"
+                          RowDefinitions="Auto,0.5"
+                          RowSpacing="3"
+                          HeightRequest="70"
+                          ColumnSpacing="10"
+                          Padding="10">
+
+                        <!-- Image at start -->
+                        <Image Grid.Row="0" Grid.Column="0"
+                               Source="{Binding Image}"
+                               WidthRequest="56"
+                               HeightRequest="56"
+                               Aspect="AspectFit"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center" />
+
+                        <!-- Name centered vertically -->
+                        <Label Grid.Row="0" Grid.Column="1"
+                               Text="{Binding Name}"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center" />
+
+                        <!-- Price at tail end -->
+                        <Label Grid.Row="0" Grid.Column="2"
+                               Text="{Binding PriceRange}"
+                               TextColor="#2E7D32"
+                               VerticalOptions="Center"
+                               HorizontalOptions="End"
+                               HorizontalTextAlignment="End" />
+
+                        <!-- Divider spanning all 3 columns -->
+                        <BoxView Grid.Row="1" Grid.ColumnSpan="3"
+                                 HeightRequest="0.5"
+                                 Color="Gray" />
+                    </Grid>
+                </DataTemplate>
+            </SfListView:SfListView.ItemTemplate>
+        </SfListView:SfListView>
+
+        <syncfusion:SfPopup x:Name="ProductPopup"
+                            IsOpen="False"
+                            WidthRequest="350"
+                            HeightRequest="450"
+                            ShowCloseButton="True"
+                            AnimationMode="Fade"
+                            AutomationId="ProductPopup"
+                            HorizontalOptions="Center"
+                            AnimationDuration="300"
+                            AnimationEasing="SinOut"
+                            VerticalOptions="Center" >
+            <syncfusion:SfPopup.HeaderTemplate>
+                <DataTemplate>
+                    <Label x:Name="ProductName"
+                           Padding="10,20,0,0"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               Grid.Row="0"
+                               Text="{Binding SelectedProduct.Name}" />
+                </DataTemplate>
+            </syncfusion:SfPopup.HeaderTemplate>
+        </syncfusion:SfPopup>
+    </Grid>
+</ContentPage>
